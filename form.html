@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+
+    <form action="" method="post" onclick=" myclick();">
+        <div id="contennt1">
+            <span id="aler"></span>
+            <div>
+                <header class="text-center">
+                    <h1 id="head">Student Survey</h1>
+                    <h4 id="subhead">Thank you for your time to help us to improve our platform</h4>
+                </header>
+            </div>
+            <hr class="rounded"><br>
+            <label1>Name: </label1> <br>
+            <input type="text" name="name" placeholder="Enter Your Name" id="nm" class="box"><br>
+            <span id="nme"></span><br>
+            <hr class="rounded">
+            <label1>Email</label1> <br>
+            <input type="email" name="email" placeholder="Enter Your Email" id="em" class="box"> <br>
+            <span id="eml"></span><br>
+            <hr class="rounded">
+            <label1>Age: </label1> <br>
+            <input type="number" name="age" placeholder="Enter Your age" id="ag" class="box" min="0" max="100"><br>
+            <span id="ages"></span><br>
+            <hr class="rounded">
+            <label>College Name</label><br>
+            <input type="text" name="college" placeholder="Enter Your college name" id="cnm" class="box"><br>
+            <span id="clgnm"></span><br>
+
+            <hr class="rounded">
+            <lable1>Select Your Stream</lable1> <br>
+
+            <div id="role">
+                <select>
+                     <option value="" name="Select disabled value"></option>
+                     <option value="BSc(cs)">BSc(cs)</option>
+                     <option value="BCA">BCA</option>
+                     <option value="B-Tech">B-Tech</option>
+                     <option value="M-Tech">M-Tech</option>
+                     <option value="MSc(cs)">MSc(cs)</option>
+                     <option value="MCA">MCA</option>
+                 </select>
+                <span id="strm"></span><br>
+            </div>
+            <hr class="rounded">
+            <lable1>Gender</lable1> <br>
+            <div id="gn">
+                <select>
+                    <option value="" name="Select disabled value"></option>
+                     <option value="male">Male</option>
+                     <option value="female">Female</option>
+                     <option value="other">Other</option>
+                     </select>
+                <br><span id="gnd"></span><br>
+
+            </div>
+            <hr class="rounded">
+            <lable1 id="hlsgh">How long have you been a student here ?</lable1>
+
+            <br>
+
+            <select>
+                   <option ></option>
+                    <option value="1-6 Months">1-6 Months</option>
+                    <option value="6 Months to 1 year">6 Moths to 1 year</option>
+                    <option value="More than 1 year">More than 1 year</option>
+                    <option value="1-3 year">1-3 Year</option>
+            </select>
+            <br><span id="hls"></span>
+            <hr class="rounded">
+            <label>
+                Are you satisfied with college Staff ?
+            </label>
+            <div id="staff">
+
+                <input type="radio" id="staff" name="yes" value="Yes">
+                <label1 for="staff">Yes</label1>
+                <input type="radio" id="staff" name="no" value="No">
+                <label1 for="staff">No</label1>
+                <br><span id="staf"></span>
+            </div>
+            <hr class="rounded">
+            <p>How often dose sexual harrassment occur in college enviorment:</p>
+            <div>
+
+                <input type="checkbox" id="harrassment" name="harrssment">
+                <label for="Very often">Very often</label><br>
+                <input type="checkbox" id="harrassment" name="harrssment">
+                <label for="Somewhat often">Somewhat often</label><br>
+                <input type="checkbox" id="harrassment" name="harrssment">
+                <label for="Neutral">Neutral</label><br>
+                <input type="checkbox" id="harrassment" name="harrssment">
+                <label for="Sexual harrassment dies not to occur often">Sexual harrassment does not to occur often</label>
+                <br><span id="har"></span>
+            </div>
+            <hr class="rounded">
+            <div class="">
+                <label for="rate" class="form-label">How would you rate Your College ?(1 to 5)(Optional)</label>
+                <input type="range" class="form-range" id="range" min="1" max="5">
+
+            </div>
+            <hr class="rounded">
+            <div class="my-4">
+                <label for="feed" class="form-label">Feedback(Optional) </label><br>
+                <input type="text" id="feed" placeholder="Enter Your Feedback"></input>
+            </div>
+            <div class="col-12 text-center my-4 ">
+
+                <a class="btn btn-primary " type="submit" onclick="window.scrollTo(0, 0)">Submit form</a>
+                <button class="btn btn-primary" type="reset" ">Reset</button>
+
+            </div>
+
+        </div>
+
+    </form>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <script type="text/javascript " src="form.js "></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+
+</body>
+
+
+</html>
